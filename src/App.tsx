@@ -31,13 +31,13 @@ const Home2 = () => {
 function App({ dispatch }: any) {
   const { token, setToken } = useToken();
   console.log("token: ", token);
-  if (!token) {
-    console.log('here');
-    dispatch(unsetAuth());
-    return <Login setToken={setToken} />
-  } else {
-    dispatch(setAuth());
-  }
+  // if (!token) {
+  //   console.log('here');
+  //   dispatch(unsetAuth());
+  //   return <Login setToken={setToken} />
+  // } else {
+  //   dispatch(setAuth());
+  // }
   return (
     <div className="App">
       <AppHeader children={fc()} />
