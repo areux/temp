@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import AppHeader from './header/Header';
+import AppHeader from 'layouts/AppHeader';
 import { useState } from 'react';
 
 import './i18n/config';
@@ -40,7 +40,7 @@ function App({ dispatch }: any) {
   // }
   return (
     <div className="App">
-      <AppHeader children={fc()} />
+      <AppHeader />
       {/* <Container disableGutters={true}> */}
       <Routes>
         <Route path="/" element={<Home />} />

@@ -5,7 +5,7 @@ import InboxIcon from '@mui/icons-material/Menu';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useTranslation } from 'react-i18next';
-import Copyright from '../Copyright';
+import Copyright from '../../Copyright';
 
 interface Props {
     window?: () => Window;
@@ -25,7 +25,7 @@ interface NavSt {
     setDrawerState: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Settings = ({ 
+const Settings = ({
     settingsState,
     setSettingsState,
 }: {
@@ -160,9 +160,9 @@ const Nav = (navAnchor: NavAnchor): NavSt => {
                 fontSize: 13,
             }}>
                 <Box sx={{ flexGrow: 1 }}></Box>
-                <Box sx={{ 
+                <Box sx={{
                     m: 2,
-                    p: 1/2,
+                    p: 1 / 2,
                     display: "flex",
                     border: 1,
                     borderColor: 'grey.400',
